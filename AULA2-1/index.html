@@ -9,9 +9,11 @@
 <body>
     <form action="exibe.php">
         <p>Digite seu nome:</p>
-        <input name="nomeusuario" type="text">
+        <input name="nomeusuario" type="text" maxlength="50">
+        <p>Insira sua data de nascimento:</p>
+        <input name="datanascusuario" type="date">
         <p>Digite sua idade:</p>
-        <input name="idadeusuario" type="number">
+        <input name="idadeusuario" type="number" min="0" max="100">
         <br>
         <input type="submit">
     </form>
