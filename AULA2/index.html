@@ -5,16 +5,17 @@
 <head>
     <title>Cursos</title>
     <style>
-        header {
+        thead {
             text-align: center;
+            font-size: 100%;
         }
     </style>
 </head>
 
 <body>
     <h1>Cursos online:</h1>
+    <!-- Lista com descrições e termos-->
     <dl>
-        <!-- Lista com descrições e termos-->
         <dt>1º Período:</dt> <!-- Define os termos-->
         <dd>Paradigmas de linguagens de programação</dd> <!-- Define a descrição dos termos-->
         <dd>Banco de dados</dd>
@@ -27,34 +28,44 @@
         <table border="1">
             <!--Título da tabela-->
             <caption>Tabela de valores por cursos</caption>
-            <!--tag TR - Significa linha/row-->
-            <tr>
-                <!--tag TH - Coluna Cabeçalho -->
-                <th>1º Periodo</th>
-                <th>Valores</th>
-                <th>Data de início</th>
-            </tr>
-            <tr>
-                <!--Célula de dados-->
-                <td>Paradigmas de linguagens de programação</td>
-                <td>700,00</td>
-                <td>24/08/2020</td>
-            </tr>
-            <tr>
-                <td>Banco de dados</td>
-                <td>1000,00</td>
-                <td>25/08/2020</td>
-            </tr>
-            <tr>
-                <td>HTML</td>
-                <td>500,00</td>
-                <td>27/08/2020</td>
-            </tr>
-            <tr>
-                <td>Cloud Computing</td>
-                <td>2000,00</td>
-                <td>28/08/2020</td>
-            </tr>
+            <thead>
+                <!--tag TR - Significa linha/row-->
+                <tr>
+                    <!--tag TH - Coluna Cabeçalho -->
+                    <th>1º Periodo</th>
+                    <th>Valores</th>
+                    <th>Data de início</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <!--Célula de dados-->
+                    <td>Paradigmas de linguagens de programação</td>
+                    <td>700,00</td>
+                    <td>24/08/2020</td>
+                </tr>
+                <tr>
+                    <td>Banco de dados</td>
+                    <td>1000,00</td>
+                    <td>25/08/2020</td>
+                </tr>
+                <tr>
+                    <td>HTML</td>
+                    <td>500,00</td>
+                    <td>27/08/2020</td>
+                </tr>
+                <tr>
+                    <td>Cloud Computing</td>
+                    <td>2000,00</td>
+                    <td>28/08/2020</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Total do curso:</td>
+                    <td> 4200,00</td>
+                </tr>
+            </tfoot>
         </table>
     </header>
     <!-- Lista numerada 
