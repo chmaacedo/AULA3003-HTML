@@ -13,7 +13,7 @@
     $numnoite = $_GET["num_noite"];
     $qtdpessoas = $_GET["qtd_pessoas"];
 
-    echo"<nav>
+    echo "<nav>
         <h2>HOTEL PLAZA</h2>
         <img src='https://media-cdn.tripadvisor.com/media/photo-s/16/1a/ea/54/hotel-presidente-4s.jpg' width='20%'
             alt='Hotel'>
