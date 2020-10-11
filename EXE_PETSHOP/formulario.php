@@ -18,4 +18,5 @@ echo "<nav>
 </nav>";
 echo "<p>Parábens $nome Seu agendamento foi feito para o dia $data_agendamento com o horário ás $horario_agendamento.</p>";
 echo "<p>Aguardamos você!!!</p>"
+
 ?>
