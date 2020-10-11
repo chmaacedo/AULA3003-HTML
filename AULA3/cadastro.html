@@ -1,32 +1,58 @@
 <!DOCTYPE html>
+<meta charset="UTF-8">
 <html>
 
 <head>
-    <title>
-    </title>
+    <title>Cadastro</title>
 </head>
 
 <body>
-    <h2>HOTEL PLAZA</h2>
-    <hr>
-    <a href="inicio.php">Inicio</a> |
-    <a href="#">Cadastro</a>
-    <hr>
+    <nav>
+        <h2>HOTEL PLAZA</h2>
+        <img src="https://media-cdn.tripadvisor.com/media/photo-s/16/1a/ea/54/hotel-presidente-4s.jpg" width="20%"
+            alt="Hotel">
+        <hr>
+        <a href="index.html">Inicio</a> |
+        <a href="#">Cadastro</a>
+        <hr>
+    </nav>
     <h2>Cadastro para locação do quarto</h2>
     <form action="formulario.php">
-        <p>Digite seu nome:</p>
-        <input name="nomeusuario" type="text">
-        <p>Digite seu sexo:</p>
-        <input name="sexousuario" type="text">
-        <p>Digite seu email:</p>
-        <input name="emailusuario" type="email">
-        <p>Insira sua data de chegada:</p>
-        <input name="data_chegada" type="date">
-        <p>Insira o nº de noites de permânencia:</p>
-        <input name="num_noite" type="number" min="0" max="30">
-        <p>Digite a quantidade de pessoas:</p>
-        <input name="qtd_pessoas" type="number">
-        <input type="submit">
+        <!--Tag fieldset,legend label para tags de formatação de formulário-->
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <label>Nome</label>
+            <input name="nomeusuario" type="text" required>
+            <br><br>
+            <label>Sexo</label>
+            <select>
+                <option name="sexousuario" value="1">Masculino</option>
+                <option name="sexousuario" value="2">Feminino</option>
+            </select>
+            <br><br>
+            <label>Email</label>
+            <input name="emailusuario" type="email" required>
+        </fieldset>
+        <fieldset>
+            <legend>Hospedagem</legend>
+            <label>Data de chegada</label>
+            <input name="data_chegada" type="date">
+            <br><br>
+            <label>Numero de noites</label>
+            <input name="num_noite" type="number" min="0" max="30">
+            <br><br>
+            <label>Quantidade de pessoas</label>
+            <input name="qtd_pessoas" type="number" min="0" max="20">
+            <br>
+            <label for="">Observações</label>
+            <textarea name="mensagem"></textarea>
+            <br><br>
+            <label for="">Receber mensagens de Newsletter?</label>
+            <input type="radio" name="news" value="nao">Sim
+            <input type="radio" name="news" value="sim">Não
+            <br><br>
+            <input type="submit" value="Reservar">
+        </fieldset>
     </form>
 </body>
 
