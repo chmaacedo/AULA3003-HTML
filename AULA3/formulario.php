@@ -15,11 +15,12 @@
 
     echo "<nav>
         <h2>HOTEL PLAZA</h2>
-        <img src='https://media-cdn.tripadvisor.com/media/photo-s/16/1a/ea/54/hotel-presidente-4s.jpg' width='20%'
+        <img src='https://media-cdn.tripadvisor.com/media/photo-s/16/1a/ea/54/hotel-presidente-4s.jpg' width='25%'
             alt='Hotel'>
         <hr>
         <a href='index.html'>Inicio</a> |
         <a href='cadastro.html'>Cadastro</a>
+        <a href='login.html'>Login</a>
         <hr>
     </nav>";
     echo "<p> Prezado(a) cliente $nome sua reserva foi concluída para $qtdpessoas hospedes.</p>";
